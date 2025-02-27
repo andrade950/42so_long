@@ -1,29 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   checks.c                                           :+:      :+:    :+:   */
+/*   args_checker.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: joaomart <joaomart@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/26 21:30:32 by joaomart          #+#    #+#             */
-/*   Updated: 2025/02/26 21:37:04 by joaomart         ###   ########.fr       */
+/*   Updated: 2025/02/27 17:38:29 by joaomart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/so_long.h"
 
+void	check_args(int ac, char *str)
+{
+	check_ac(ac);
+	check_filename(str);
+	check_maps_exists(str);
+}
+
 void	check_ac(int ac)
 {
 	if (ac > 2)
-	{
-		ft_printf("Error\n");
-		exit(EXIT_FAILURE);
-	}
+		error();
 	else if (ac < 2)
-	{
-		ft_printf("Error\n");
-		exit(EXIT_FAILURE);
-	}
+		error();
 }
 
 void	check_filename(char *str)
@@ -43,9 +44,15 @@ void	check_filename(char *str)
 			j++;
 		}
 		else
-		{
-			ft_printf("Error\n");
-			exit(EXIT_FAILURE);
-		}
+			error();
 	}
+}
+
+void	check_maps_exists(char *str)
+{
+	int	fd;
+
+	fd = open(str, O_RDONLY);
+	if (fd == -1)
+		error();
 }

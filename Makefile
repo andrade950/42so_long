@@ -6,7 +6,7 @@
 #    By: joaomart <joaomart@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/19 10:39:28 by joaomart          #+#    #+#              #
-#    Updated: 2025/02/26 21:39:25 by joaomart         ###   ########.fr        #
+#    Updated: 2025/02/27 17:45:55 by joaomart         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,7 @@ MINILIBX_DIR = libs/minilibx-linux
 MINILIBX = $(MINILIBX_DIR)/libmlx.a
 
 # so_long #
-SO_LONG_SRCS = srcs/so_long.c srcs/checks.c
+SO_LONG_SRCS = srcs/so_long.c srcs/args_checker.c srcs/error.c srcs/map_checker.c
 SO_LONG_OBJS = $(SO_LONG_SRCS:.c=.o)
 
 all: $(NAME)

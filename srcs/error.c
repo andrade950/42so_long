@@ -1,20 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   so_long.c                                          :+:      :+:    :+:   */
+/*   error.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: joaomart <joaomart@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/19 10:32:51 by joaomart          #+#    #+#             */
-/*   Updated: 2025/02/27 17:51:06 by joaomart         ###   ########.fr       */
+/*   Created: 2025/02/27 17:12:37 by joaomart          #+#    #+#             */
+/*   Updated: 2025/02/27 17:13:14 by joaomart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/so_long.h"
 
-int	main(int ac, char **av)
+void	error()
 {
-	check_args(ac, av[1]);
-	check_map_rect(av[1]);
+	ft_printf("Error\n");
+	exit(EXIT_FAILURE);
 }
-

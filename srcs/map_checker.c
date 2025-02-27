@@ -1,20 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   so_long.c                                          :+:      :+:    :+:   */
+/*   map_checker.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: joaomart <joaomart@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/19 10:32:51 by joaomart          #+#    #+#             */
-/*   Updated: 2025/02/27 17:51:06 by joaomart         ###   ########.fr       */
+/*   Created: 2025/02/27 17:45:27 by joaomart          #+#    #+#             */
+/*   Updated: 2025/02/27 17:49:50 by joaomart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/so_long.h"
 
-int	main(int ac, char **av)
+/* void	check_map(char *map)
 {
-	check_args(ac, av[1]);
-	check_map_rect(av[1]);
-}
 
+} */
+
+void	check_map_rect(char *map)
+{
+	int	fd;
+	int i = 0;
+
+	fd = open(map, O_RDONLY);
+	while (get_next_line(fd))
+	{
+		i++;
+	}
+	ft_printf("%d", i);
+}
