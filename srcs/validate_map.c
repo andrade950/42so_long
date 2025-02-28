@@ -1,31 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   map_checker.c                                      :+:      :+:    :+:   */
+/*   validate_map.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joaomart <joaomart@student.42.fr>          +#+  +:+       +#+        */
+/*   By: andrade <andrade@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/27 17:45:27 by joaomart          #+#    #+#             */
-/*   Updated: 2025/02/27 17:49:50 by joaomart         ###   ########.fr       */
+/*   Updated: 2025/02/28 17:13:49 by andrade          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/so_long.h"
 
-/* void	check_map(char *map)
+void	validate_map(t_map *map_info, char *f_name)
 {
-
-} */
-
-void	check_map_rect(char *map)
-{
-	int	fd;
-	int i = 0;
-
-	fd = open(map, O_RDONLY);
-	while (get_next_line(fd))
-	{
-		i++;
-	}
-	ft_printf("%d", i);
+	measure_lines(map_info, f_name);
+	validate_map_shape(map_info);
 }

@@ -3,20 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   args_checker.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joaomart <joaomart@student.42.fr>          +#+  +:+       +#+        */
+/*   By: andrade <andrade@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/26 21:30:32 by joaomart          #+#    #+#             */
-/*   Updated: 2025/02/27 17:38:29 by joaomart         ###   ########.fr       */
+/*   Updated: 2025/02/28 16:15:10 by andrade          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/so_long.h"
 
-void	check_args(int ac, char *str)
+void	check_args(int ac, char *f_name)
 {
 	check_ac(ac);
-	check_filename(str);
-	check_maps_exists(str);
+	check_filename(f_name);
+	check_map_exists(f_name);
 }
 
 void	check_ac(int ac)
@@ -27,18 +27,18 @@ void	check_ac(int ac)
 		error();
 }
 
-void	check_filename(char *str)
+void	check_filename(char *f_name)
 {
 	int	i;
 	int	j;
 	char	*type;
 
-	i = ft_strlen(str) - 4;
+	i = ft_strlen(f_name) - 4;
 	j = 0;
 	type = ".ber";
-	while (str[i])
+	while (f_name[i])
 	{
-		if (str[i] == type[j])
+		if (f_name[i] == type[j])
 		{
 			i++;
 			j++;
@@ -48,11 +48,11 @@ void	check_filename(char *str)
 	}
 }
 
-void	check_maps_exists(char *str)
+void	check_map_exists(char *f_name)
 {
 	int	fd;
 
-	fd = open(str, O_RDONLY);
+	fd = open(f_name, O_RDONLY);
 	if (fd == -1)
 		error();
 }
