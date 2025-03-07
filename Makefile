@@ -6,14 +6,14 @@
 #    By: andrade <andrade@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/19 10:39:28 by joaomart          #+#    #+#              #
-#    Updated: 2025/03/07 17:35:16 by andrade          ###   ########.fr        #
+#    Updated: 2025/03/07 18:59:58 by andrade          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = so_long
 CC = cc
 FLAGS = -Wall -Wextra -Werror -g
-MLXFLAGS = -I$(MINILIBX_DIR) -L$(MINILIBX_DIR) -lmlx -lXext -lX11
+MLXFLAGS = -L $(MINILIBX_DIR) -lmlx -Ilmlx -lXext -lX11
 
 # Libft , ft_printf e get_next_line #
 LIBFT_DIR = libs/libft
@@ -39,7 +39,7 @@ $(NAME): $(SO_LONG_OBJS) $(LIBFT) $(FT_PRINTF) $(GNL) $(MINILIBX)
 	@echo "$(BOLD_BLUE)╔══════════════════════════════════════╗"
 	@echo "$(BOLD_BLUE)║       🔨 Building $(NAME)...         ║"
 	@echo "$(BOLD_BLUE)╚══════════════════════════════════════╝$(RESET)"
-	@$(CC) $(FLAGS) $(SO_LONG_OBJS) $(LIBFT) $(FT_PRINTF) $(GNL) $(MINILIBX) $(MLXFLAGS) -lm -o $(NAME)
+	@$(CC) $(FLAGS) $(SO_LONG_OBJS) $(LIBFT) $(FT_PRINTF) $(GNL) $(MINILIBX) $(MLXFLAGS) -o $(NAME)
 	@echo "$(BOLD_GREEN)✅ $(NAME) built successfully!$(RESET)"
 
 $(SO_LONG_OBJ_DIR)/%.o: srcs/%.c
@@ -89,7 +89,7 @@ fclean: clean
 	@echo "$(BOLD_BLUE)╔══════════════════════════════════════╗"
 	@echo "$(BOLD_BLUE)║        🗑️  Removing $(NAME)...        ║"
 	@echo "$(BOLD_BLUE)╚══════════════════════════════════════╝$(RESET)"
-	@rm -f $(NAME)
+	@rm -rf $(NAME)
 	@$(MAKE) -C $(LIBFT_DIR) fclean --no-print-directory
 	@$(MAKE) -C $(FT_PRINTF_DIR) fclean --no-print-directory
 	@$(MAKE) -C $(GNL_DIR) fclean --no-print-directory
