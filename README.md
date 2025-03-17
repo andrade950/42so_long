@@ -9,7 +9,7 @@ This project consists of a small 2D game developed using the **MiniLibX** librar
   - Movement occurs using the **W, A, S, D** keys or the arrow keys.
   - The game ends correctly when pressing **ESC** or closing the window.
 - **Version With Bonus**:
-  - Enemies that move around the map and can defeat the player.
+  - Enemies can defeat the player.
   - Animations for characters and items.
   - Move counter displayed directly on the game screen.
 
