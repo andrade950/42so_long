@@ -36,10 +36,10 @@ Este projeto consiste em um pequeno jogo 2D desenvolvido utilizando a biblioteca
 
   - **Instalar a MiniLibX**:
     ```bash
-    # Clonar o repositório da MiniLibX na pasta libs
-    git clone https://github.com/42Paris/minilibx-linux.git libs/minilibx-linux
+    # Clonar o repositório da MiniLibX
+    git clone https://github.com/42Paris/minilibx-linux.git minilibx-linux
 
-    # Aceder à pasta da MiniLibX
+    # A MiniLibX tem de ficar na pasta libs
     cd 42so_long/libs/minilibx-linux
 
 
