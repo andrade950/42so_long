@@ -17,7 +17,7 @@ This project consists of a small 2D game developed using the **MiniLibX** librar
   - **Version Without Bonus**:
     ![Image](https://github.com/user-attachments/assets/2400dd41-7305-4377-a52f-55f22344e514)
   - **Version With Bonus**:
-    
+    ![Image](https://github.com/user-attachments/assets/5922663e-7207-448f-8b00-86008818a07c)
     
 - **Graphic Elements**:
   - The table below shows all the images used in the game:
