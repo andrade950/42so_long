@@ -22,7 +22,7 @@ This project consists of a small 2D game developed using the **MiniLibX** librar
     ![Image](https://github.com/user-attachments/assets/5922663e-7207-448f-8b00-86008818a07c)
     
 - **Graphic Elements**:
-  - The table below shows all the images used in the game:
+  - All the images used in the game:
 
 <div align="center">
 
