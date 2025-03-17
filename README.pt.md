@@ -1,5 +1,7 @@
 # so_long
 
+[Read in English](README.md)
+
 Este projeto consiste em um pequeno jogo 2D desenvolvido utilizando a biblioteca **MiniLibX**.
 
 - **Objetivo**: Criar um jogo 2D onde o jogador deve coletar itens e alcançar a saída enquanto navega por um mapa.
@@ -15,9 +17,9 @@ Este projeto consiste em um pequeno jogo 2D desenvolvido utilizando a biblioteca
 
 - **Demonstração**:
   - **Versão Sem Bônus**:
-    - ![Vídeo](#)
+    ![Image](https://github.com/user-attachments/assets/2400dd41-7305-4377-a52f-55f22344e514)
   - **Versão Com Bônus**:
-    - ![Vídeo](#)
+    ![Image](https://github.com/user-attachments/assets/5922663e-7207-448f-8b00-86008818a07c)
 
 - **Elementos Gráficos**:
   - A tabela abaixo apresenta todas as imagens utilizadas no jogo:
