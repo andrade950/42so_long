@@ -22,7 +22,7 @@ Este projeto consiste em um pequeno jogo 2D desenvolvido utilizando a biblioteca
     ![Image](https://github.com/user-attachments/assets/5922663e-7207-448f-8b00-86008818a07c)
 
 - **Elementos Gráficos**:
-  - A tabela abaixo apresenta todas as imagens utilizadas no jogo:
+  - Todas as imagens utilizadas no jogo:
 
 <div align="center">
 
