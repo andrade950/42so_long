@@ -30,8 +30,6 @@ Este projeto consiste em um pequeno jogo 2D desenvolvido utilizando a biblioteca
 
 </div>
 
-  > As imagens foram obtidas de fontes livres ou criadas para o projeto.
-
 - **Instalação e Compilação**:
   - **Instalar a MiniLibX**:
     ```bash
