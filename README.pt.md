@@ -26,8 +26,8 @@ Este projeto consiste em um pequeno jogo 2D desenvolvido utilizando a biblioteca
 
 <div align="center">
 
-  | Personagem | Inimigo | Coletável | Saída | Explosão | Parede | Chão |
-  |------------|---------|-----------|-------|----------|--------|------|
+  | Jogador | Inimigo | Coletável | Saída | Explosão | Parede | Chão |
+  |---------|---------|-----------|-------|----------|--------|------|
   | ![Image](https://github.com/user-attachments/assets/337a5a60-af49-4a24-8bf2-7c9722c56791) | ![Image](https://github.com/user-attachments/assets/4b118944-a70c-4e5a-90f4-62b12fbc772a) | ![Image](https://github.com/user-attachments/assets/88f1dfe9-4676-4622-b52b-f127a3eecb46) | ![Image](https://github.com/user-attachments/assets/a61be625-d8ad-4dff-9f01-f454aa648dfa) | ![Image](https://github.com/user-attachments/assets/684743c0-6ce3-4954-a14e-0d28add3db4a) | ![Image](https://github.com/user-attachments/assets/eba7d8e0-17ff-458b-9bfb-64d2ed364e99) | ![Image](https://github.com/user-attachments/assets/4ec4d4e8-ea92-4201-b541-005adfc996be) |
 
 </div>
