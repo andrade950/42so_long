@@ -33,20 +33,20 @@ void	display_game_info(t_game *info)
 {
 	char	*moves_str;
 	char	*collects_str;
-	char	*lifes_str;
+	char	*lives_str;
 
 	moves_str = ft_itoa(info->moves);
 	collects_str = ft_itoa(info->map_info.n_collects);
-	lifes_str = ft_itoa(info->lives);
+	lives_str = ft_itoa(info->lives);
 	mlx_string_put(info->mlx, info->window, 10, 20, 0xFFFFFF, "Moves:");
 	mlx_string_put(info->mlx, info->window, 60, 20, 0xFFFFFF, moves_str);
 	mlx_string_put(info->mlx, info->window, 10, 40, 0xFFFFFF, "Collectibles:");
 	mlx_string_put(info->mlx, info->window, 110, 40, 0xFFFFFF, collects_str);
-	mlx_string_put(info->mlx, info->window, 10, 60, 0xFFFFFF, "Lifes:");
-	mlx_string_put(info->mlx, info->window, 60, 60, 0xFFFFFF, lifes_str);
+	mlx_string_put(info->mlx, info->window, 10, 60, 0xFFFFFF, "Lives:");
+	mlx_string_put(info->mlx, info->window, 60, 60, 0xFFFFFF, lives_str);
 	free(moves_str);
 	free(collects_str);
-	free(lifes_str);
+	free(lives_str);
 }
 
 void	exit_type(t_game *info, int x, int y)
