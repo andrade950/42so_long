@@ -1,5 +1,7 @@
 # so_long
 
+[Leia em Português](README.pt.md)
+
 This project consists of a small 2D game developed using the **MiniLibX** library.
 
 - **Objective**: Create a 2D game where the player must collect items and reach the exit while navigating a map.
