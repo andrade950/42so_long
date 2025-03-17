@@ -33,6 +33,7 @@ This project consists of a small 2D game developed using the **MiniLibX** librar
 </div>
 
 - **Installation and Compilation**:
+
   - **Install MiniLibX**:
     ```bash
     # Clone the MiniLibX repository into the libs folder
