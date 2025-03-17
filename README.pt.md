@@ -9,7 +9,7 @@ Este projeto consiste em um pequeno jogo 2D desenvolvido utilizando a biblioteca
   - A movimentação ocorre por meio das teclas **W, A, S, D** ou setas do teclado.
   - O jogo encerra corretamente ao pressionar **ESC** ou ao fechar a janela.
 - **Versão Com Bônus**:
-  - Inimigos que se movimentam pelo mapa e podem derrotar o jogador.
+  - Inimigos podem derrotar o jogador.
   - Animações para os personagens e itens.
   - Contador de movimentos exibido diretamente na tela do jogo.
 
