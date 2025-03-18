@@ -66,7 +66,7 @@ void	elements_locked(char **map_copy, int i)
 	j = 0;
 	while (map_copy[i][j])
 	{
-		if (map_copy[i][j] == 'P' || map_copy[i][j] == 'C')
+		if (map_copy[i][j] == 'E' || map_copy[i][j] == 'C')
 		{
 			ft_error("Map elements enclosed!");
 			while (map_copy[i])
