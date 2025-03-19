@@ -61,4 +61,19 @@ Este projeto consiste em um pequeno jogo 2D desenvolvido utilizando a biblioteca
     # Executar o jogo com um mapa
     ./so_long_bonus maps_bonus/mapa_exemplo.ber
     ```
+
+- **Tester**
+
+  Um script Bash é fornecido para testar automaticamente todos os mapas numa pasta especificada:
+
+  ```bash
+  # Tornar o script executável
+  chmod +x map_tester.sh
+  # Executar o tester na pasta dos mapas  
+  # Projeto base 
+  ./test_maps.sh ./so_long ./maps
+  # Projeto bônus
+  ./test_maps.sh ./so_long_bonus ./maps_bonus
+  ```
+  
 ---
