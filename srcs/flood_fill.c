@@ -6,7 +6,7 @@
 /*   By: andrade <andrade@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/10 15:19:54 by joaomart          #+#    #+#             */
-/*   Updated: 2025/03/14 10:30:52 by andrade          ###   ########.fr       */
+/*   Updated: 2025/03/19 12:06:05 by andrade          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,13 +45,18 @@ char	**copy_map(t_game *info)
 	return (map_copy);
 }
 
-void	flood_fill(char **map_copy, int px, int py)
+void flood_fill(char **map_copy, int px, int py)
 {
 	if (px < 0 || py < 0 || map_copy[py][px] == '1'
-		|| map_copy[py][px] == 'E' || map_copy[py][px] == 'F')
-		return ;
+		|| map_copy[py][px] == 'F')
+		return;
+	if (map_copy[py][px] == 'E')
+	{
+		map_copy[py][px] = 'F';
+		return;
+	}
 	if (map_copy[py][px] == '0' || map_copy[py][px] == 'P'
-			|| map_copy[py][px] == 'C')
+		|| map_copy[py][px] == 'C')
 		map_copy[py][px] = 'F';
 	flood_fill(map_copy, px + 1, py);
 	flood_fill(map_copy, px - 1, py);
