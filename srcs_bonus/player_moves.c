@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   player_moves.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joaomart <joaomart@student.42.fr>          +#+  +:+       +#+        */
+/*   By: andrade <andrade@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 17:27:09 by andrade           #+#    #+#             */
-/*   Updated: 2025/03/17 15:21:00 by joaomart         ###   ########.fr       */
+/*   Updated: 2025/03/19 16:09:21 by andrade          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	pos_x(t_game *info, int next_x, int next_y)
 {
 	info->map_info.n_explosion++;
 	info->lives--;
+	ft_printf("You were hit by an enemy! %d lives remaining.\n",
+		info->lives);
 	info->map_info.grid[next_y][next_x] = 'K';
 	info->assets.explosion_anim.active = 1;
 	info->assets.explosion_anim.explosion_x = next_x;
