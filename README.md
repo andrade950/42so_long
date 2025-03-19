@@ -61,5 +61,18 @@ This project consists of a small 2D game developed using the **MiniLibX** librar
     ./so_long_bonus maps_bonus/example_map.ber
     ```
 
----
+- **Tester**
 
+  A bash script is provided to automatically test all maps in a specified folder:
+  
+  ```bash
+  # Make it executable
+  chmod +x map_tester.sh
+  # Run the tester on your maps folder
+  # Base project 
+  ./test_maps.sh ./so_long ./maps
+  # Bonus project
+  ./test_maps.sh ./so_long_bonus ./maps_bonus
+   ```
+
+---
