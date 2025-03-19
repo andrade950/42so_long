@@ -6,7 +6,7 @@
 /*   By: andrade <andrade@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/10 15:19:54 by joaomart          #+#    #+#             */
-/*   Updated: 2025/03/19 12:05:59 by andrade          ###   ########.fr       */
+/*   Updated: 2025/03/19 12:12:35 by andrade          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,11 +49,11 @@ void flood_fill(char **map_copy, int px, int py)
 {
 	if (px < 0 || py < 0 || map_copy[py][px] == '1'
 		|| map_copy[py][px] == 'X'|| map_copy[py][px] == 'F')
-		return;
+		return ;
 	if (map_copy[py][px] == 'E')
 	{
 		map_copy[py][px] = 'F';
-		return;
+		return ;
 	}
 	if (map_copy[py][px] == '0' || map_copy[py][px] == 'P'
 		|| map_copy[py][px] == 'C')
