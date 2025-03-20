@@ -73,8 +73,8 @@ for MAP_FILE in "$MAPS_FOLDER"/*.{ber,BER}; do
     rm "$TEMP_OUTPUT"
     
     # Check for error messages
-    if echo "$OUTPUT" | grep -q "Error -"; then
-        ERROR_MSG=$(echo "$OUTPUT" | grep "Error -" | head -1)
+    if echo "$OUTPUT" | grep -q "Error"; then
+        ERROR_MSG=$(echo "$OUTPUT" | grep "Error" | head -1)
         echo -e "${RED}✗ INVALID${NC}: $ERROR_MSG"
         INVALID_MAPS+=("$MAP_FILE")
         INVALID_REASONS+=("$ERROR_MSG")
