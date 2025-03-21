@@ -69,7 +69,7 @@ Este projeto consiste em um pequeno jogo 2D desenvolvido utilizando a biblioteca
   ```bash
   # Tornar o script executável
   chmod +x map_tester.sh
-  # Executar o tester na pasta dos mapas  
+  # Executar o tester com a pasta dos mapas  
   # Projeto base 
   ./test_maps.sh ./so_long ./maps
   # Projeto bônus
