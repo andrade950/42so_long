@@ -68,7 +68,7 @@ This project consists of a small 2D game developed using the **MiniLibX** librar
   ```bash
   # Make it executable
   chmod +x map_tester.sh
-  # Run the tester on your maps folder
+  # Run the tester with the maps folder.
   # Base project 
   ./test_maps.sh ./so_long ./maps
   # Bonus project
