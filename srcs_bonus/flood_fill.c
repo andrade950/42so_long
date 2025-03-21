@@ -45,10 +45,10 @@ char	**copy_map(t_game *info)
 	return (map_copy);
 }
 
-void flood_fill(char **map_copy, int px, int py)
+void	flood_fill(char **map_copy, int px, int py)
 {
 	if (px < 0 || py < 0 || map_copy[py][px] == '1'
-		|| map_copy[py][px] == 'X'|| map_copy[py][px] == 'F')
+		|| map_copy[py][px] == 'X' || map_copy[py][px] == 'F')
 		return ;
 	if (map_copy[py][px] == 'E')
 	{
