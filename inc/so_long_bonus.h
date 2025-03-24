@@ -145,7 +145,7 @@ void	update_all_anim(t_game *info);
 void	validate_coor(t_game *info);
 void	validate_map_access(t_game *info);
 char	**copy_map(t_game *info);
-void	elements_locked(char **map_copy, int i);
+void	elements_locked(t_game *info, char **map_copy, int i);
 void	flood_fill(char **map_copy, int px, int py);
 
 //Functions key.c
