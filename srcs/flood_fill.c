@@ -64,7 +64,7 @@ void	flood_fill(char **map_copy, int px, int py)
 	flood_fill(map_copy, px, py - 1);
 }
 
-void	elements_locked(char **map_copy, int i)
+void	elements_locked(t_game *info, char **map_copy, int i)
 {
 	int	j;
 
@@ -73,10 +73,10 @@ void	elements_locked(char **map_copy, int i)
 	{
 		if (map_copy[i][j] == 'E' || map_copy[i][j] == 'C')
 		{
-			ft_error("Map elements enclosed!");
 			while (map_copy[i])
 				free(map_copy[i++]);
 			free(map_copy);
+			ft_error_map(info, "Map elements enclosed!");
 		}
 		j++;
 	}
