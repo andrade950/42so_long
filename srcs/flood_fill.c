@@ -95,7 +95,7 @@ void	validate_map_access(t_game *info)
 	i = 0;
 	while (map_copy[i])
 	{
-		elements_locked(map_copy, i);
+		elements_locked(info, map_copy, i);
 		free(map_copy[i]);
 		i++;
 	}
