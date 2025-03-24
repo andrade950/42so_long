@@ -49,7 +49,8 @@ void	check_map_exists(char *f_name)
 
 	fd = open(f_name, O_RDONLY);
 	if (fd < 0)
-		ft_error_fd(fd, "File does not exist!");
+		ft_error("File does not exist!");
+	close(fd);
 }
 
 void	check_args(int ac, char *f_name)
