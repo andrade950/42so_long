@@ -1,79 +1,96 @@
-# so_long
+<div align="center">
+
+# 🎮 so_long
+
+**Um pequeno jogo 2D desenvolvido com MiniLibX em C**
+
+[![Linguagem](https://img.shields.io/badge/Linguagem-C-blue.svg)](https://en.wikipedia.org/wiki/C_(programming_language))
+[![Biblioteca](https://img.shields.io/badge/Gráficos-MiniLibX-orange.svg)](#instalação)
+[![Norm](https://img.shields.io/badge/42-Norminette-brightgreen.svg)](#)
 
 [Read in English](README.md)
 
-Este projeto consiste em um pequeno jogo 2D desenvolvido utilizando a biblioteca **MiniLibX**.
+</div>
 
-- **Objetivo**: Criar um jogo 2D onde o jogador deve coletar itens e alcançar a saída enquanto navega por um mapa.
-- **Mecânica do Jogo**:
-  - O jogador precisa coletar todos os colecionáveis antes de alcançar a saída.
-  - O jogo exibe a contagem de movimentos.
-  - A movimentação ocorre por meio das teclas **W, A, S, D** ou setas do teclado.
-  - O jogo encerra corretamente ao pressionar **ESC** ou ao fechar a janela.
-- **Versão Com Bônus**:
-  - Inimigos podem derrotar o jogador.
-  - Animações para os personagens e itens.
-  - Contador de movimentos exibido diretamente na tela do jogo.
+---
 
-- **Demonstração**:
-  - **Versão Sem Bônus**:
-    ![Image](https://github.com/user-attachments/assets/2400dd41-7305-4377-a52f-55f22344e514)
-  - **Versão Com Bônus**:
-    ![Image](https://github.com/user-attachments/assets/5922663e-7207-448f-8b00-86008818a07c)
+## 📌 Visão Geral
 
-- **Elementos Gráficos**:
-  - Todas as imagens utilizadas no jogo:
+`so_long` é um jogo 2D de vista de cima onde o jogador navega por um mapa de tiles, recolhe todos os itens e alcança a saída. Desenvolvido inteiramente em C utilizando a biblioteca gráfica **MiniLibX**.
+
+---
+
+## 🕹️ Como Jogar
+
+- Recolhe **todos os colecionáveis** antes de a saída desbloquear
+- Chega à **saída** para ganhar
+- Move-te com **W A S D** ou as **setas do teclado**
+- Pressiona **ESC** ou fecha a janela para sair
+- O teu **contador de movimentos** é registado ao longo do jogo
+
+### Versão base
+![Jogo base](https://github.com/user-attachments/assets/2400dd41-7305-4377-a52f-55f22344e514)
+
+### Versão bónus
+![Jogo bónus](https://github.com/user-attachments/assets/5922663e-7207-448f-8b00-86008818a07c)
+
+**Funcionalidades bónus:**
+- Inimigos que podem derrotar o jogador
+- Animações para personagens e itens
+- Contador de movimentos renderizado diretamente no ecrã
+
+---
+
+## 🎨 Sprites
 
 <div align="center">
 
-  | Jogador | Inimigo | Coletável | Saída | Explosão | Parede | Chão |
-  |---------|---------|-----------|-------|----------|--------|------|
-  | ![Image](https://github.com/user-attachments/assets/337a5a60-af49-4a24-8bf2-7c9722c56791) | ![Image](https://github.com/user-attachments/assets/4b118944-a70c-4e5a-90f4-62b12fbc772a) | ![Image](https://github.com/user-attachments/assets/88f1dfe9-4676-4622-b52b-f127a3eecb46) | ![Image](https://github.com/user-attachments/assets/a61be625-d8ad-4dff-9f01-f454aa648dfa) | ![Image](https://github.com/user-attachments/assets/684743c0-6ce3-4954-a14e-0d28add3db4a) | ![Image](https://github.com/user-attachments/assets/eba7d8e0-17ff-458b-9bfb-64d2ed364e99) | ![Image](https://github.com/user-attachments/assets/4ec4d4e8-ea92-4201-b541-005adfc996be) |
+| Jogador | Inimigo | Colecionável | Saída | Explosão | Parede | Chão |
+|:-------:|:-------:|:------------:|:-----:|:--------:|:------:|:----:|
+| ![](https://github.com/user-attachments/assets/337a5a60-af49-4a24-8bf2-7c9722c56791) | ![](https://github.com/user-attachments/assets/4b118944-a70c-4e5a-90f4-62b12fbc772a) | ![](https://github.com/user-attachments/assets/88f1dfe9-4676-4622-b52b-f127a3eecb46) | ![](https://github.com/user-attachments/assets/a61be625-d8ad-4dff-9f01-f454aa648dfa) | ![](https://github.com/user-attachments/assets/684743c0-6ce3-4954-a14e-0d28add3db4a) | ![](https://github.com/user-attachments/assets/eba7d8e0-17ff-458b-9bfb-64d2ed364e99) | ![](https://github.com/user-attachments/assets/4ec4d4e8-ea92-4201-b541-005adfc996be) |
 
 </div>
 
-- **Instalação e Compilação**:
+---
 
-  - **Instalar a MiniLibX**:
-    ```bash
-    # Clonar o repositório da MiniLibX
-    git clone https://github.com/42Paris/minilibx-linux.git minilibx-linux
+## ⚙️ Instalação e Compilação
 
-    # A MiniLibX tem de ficar na pasta libs
-    cd 42so_long/libs/minilibx-linux
+### 1. Instalar a MiniLibX
 
+```bash
+git clone https://github.com/42Paris/minilibx-linux.git minilibx-linux
+# Colocar dentro da pasta libs:
+# 42so_long/libs/minilibx-linux
+```
 
-    ```
-  - **Compilar o Jogo**:
-    ```bash
-    # Navegar para a pasta do projeto
-    cd 42so_long
+### 2. Compilar e Executar
 
-    # Compilar o jogo base
-    make
+```bash
+cd 42so_long
 
-    # Executar o jogo com um mapa
-    ./so_long maps/mapa_exemplo.ber
+# Jogo base
+make
+./so_long maps/mapa_exemplo.ber
 
-     # Compilar o jogo com bonus
-    make bonus
+# Jogo bónus
+make bonus
+./so_long_bonus maps_bonus/mapa_exemplo.ber
+```
 
-    # Executar o jogo com um mapa
-    ./so_long_bonus maps_bonus/mapa_exemplo.ber
-    ```
+---
 
-- **Tester**
+## 🧪 Tester de Mapas
 
-  Um script Bash é fornecido para testar automaticamente todos os mapas numa pasta especificada:
+Está incluído um script bash para testar automaticamente todos os mapas numa pasta.
 
-  ```bash
-  # Tornar o script executável
-  chmod +x map_tester.sh
-  # Executar o tester com a pasta dos mapas  
-  # Projeto base 
-  ./test_maps.sh ./so_long ./maps
-  # Projeto bônus
-  ./test_maps.sh ./so_long_bonus ./maps_bonus
-  ```
-  
+```bash
+chmod +x map_tester.sh
+
+# Projeto base
+./test_maps.sh ./so_long ./maps
+
+# Projeto bónus
+./test_maps.sh ./so_long_bonus ./maps_bonus
+```
+
 ---
